@@ -7,7 +7,8 @@ export default defineConfig({
     emptyOutDir: true,
   },
   server: {
-    host: '0.0.0.0', // 👈 viktig for Render
-    port: 5177
+    host: '0.0.0.0',
+    port: 5177,
+    allowedHosts: ['househacker-agent.onrender.com']
   },
 });
