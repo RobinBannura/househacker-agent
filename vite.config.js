@@ -1,11 +1,13 @@
-// vite.config.js
-export default {
+import { defineConfig } from 'vite';
+
+export default defineConfig({
   root: 'public',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
   },
   server: {
-    port: 5177,
+    host: '0.0.0.0', // 👈 viktig for Render
+    port: 5177
   },
-};
+});
